@@ -128,5 +128,4 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-Next.js 완전 정복/.DS_Store
 .DS_Store
