@@ -57,5 +57,7 @@
 - fallback
     + false: show errors
     + 'Blocking': show after generation
-    + true: show loading first and show the generated page
+    + true: Show loading first and show the generated page
+ 
+
 
