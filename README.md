@@ -36,3 +36,26 @@
 % yarn add -D prettier
 
 ```
+
+### Adding metadata loader
+- yaml파일 형식으로된 메타데이터를 파일 상단에서 읽어오는 것
+- install
+```bash
+% yarn add gray-matter
+
+### MD file analyze tools
+```bash
+% yarn add remark remark-html
+```
+
+### date formatting package
+```bash
+% yarn add date-fns
+```
+
+### SSG(Static Site Generation)
+- fallback
+    + false: show errors
+    + 'Blocking': show after generation
+    + true: show loading first and show the generated page
+
