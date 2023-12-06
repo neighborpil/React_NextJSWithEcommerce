@@ -129,5 +129,8 @@ module.exports = {
   // ...other options
 }
 ```
-
+- package.json에 script 추가
+```
+'postbuild': 'next-sitemap'
+```
 
