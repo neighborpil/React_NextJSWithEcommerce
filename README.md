@@ -134,3 +134,15 @@ module.exports = {
 'postbuild': 'next-sitemap'
 ```
 
+
+## ESLint
+- 설치
+```
+% yarn add -D eslint
+```
+- 초기화
+```
+% yarn eslint -init
+```
+
+
