@@ -144,5 +144,13 @@ module.exports = {
 ```
 % yarn eslint -init
 ```
+- tainwind-css용 eslint 추가
+```
+% yarn add -D eslint-plugin-tainwindcss
+```
+- nextjs용 eslint 추가
+```
+% yarn add -D @next/eslint-plugin-next
+```
 
 
