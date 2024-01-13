@@ -153,4 +153,25 @@ module.exports = {
 % yarn add -D @next/eslint-plugin-next
 ```
 
+### _app.js
+- 공통된 데이터
+
+### _document.js
+- 좀더 정적인것, 메타태그등의 헤더
+
+### Web Performance 측정
+- https://web.dev/vitals/
+    + 웹개발에서 유의해야할 사항에 대하여 정리해놓은 사이트
+ 
+- https://developers.google.com/speed
+    + page speed 분석 사이트
+- Chrome 브라우저를 이용한 Performence 측정
+    + Performence, Performence Insight, Lighthouse를 통한 측정
+- _app.js에 webvitals추가
+    + 아래의 코드를 _app.js에 추가, 아래의 코드는 브라우저 로그로 바로 보여주지만, ga등에 보내서 수집, 사용자의 로그 수집
+```
+export function reportWebVitals(metric) {
+  console.log(metric)
+}
+```
 
