@@ -175,3 +175,37 @@ export function reportWebVitals(metric) {
 }
 ```
 
+## Error Handling
+- https://nextjs.org/docs/pages/building-your-application/configuring/error-handling
+- yarn dev로 했을 경우에는 화면에 바로 표시된다
+- _error.js만들어서 커스텀 가능
+    + 만약 404.js가 있다면 먼저 보여주고 없다면 커스텀 페이지(_error.js)를 보여준다
+    + 예시
+```
+function Error({ statusCode }) {
+  return (
+    <p>
+      {statusCode
+        ? `An error ${statusCode} occurred on server`
+        : 'An error occurred on client'}
+    </p>
+  )
+}
+ 
+Error.getInitialProps = ({ res, err }) => {
+  const statusCode = res ? res.statusCode : err ? err.statusCode : 404
+  return { statusCode }
+}
+ 
+export default Error
+```
+
+### React 심화 - 18version streaming
+- 먼저 새 프로젝트 제작
+```
+% yarn create next-app server-components --example "https://github.com/vercel/next-react-server-components"
+```
+- 스켈레톤을 먼저 그리고 데이터를 불러오는 streaming 방식에 대한 예제
+- 이전에는 컴포넌트 별로 서버사이드랑 클라이언트 사이드 각각 안되던 부분을 따로 된다는 내용
+
+
