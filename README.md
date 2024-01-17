@@ -211,15 +211,15 @@ export default Error
 
 ### Data Fetching API
 1.getServerSideProps
-    + return props, redirect, notfound
-    + request할때마다 페이지가 pre-render된다
+     + return props, redirect, notfound
+     + request할때마다 페이지가 pre-render된다
 2. getStaticProps
-    + return props, redirect, notfound, revalidate
+     + return props, redirect, notfound, revalidate
 3. getInitialProps
-    + legacy
+     + legacy
 4. getStaticPaths
-    + return paths or fallback(false, true, 'blocking')
-    + preview / revalidate / process.cwd() - 파일 읽을때 사용
+     + return paths or fallback(false, true, 'blocking')
+     + preview / revalidate / process.cwd() - 파일 읽을때 사용
 
 ### Next Rounter
 - https://nextjs.org/docs/pages/api-reference/functions/use-router
