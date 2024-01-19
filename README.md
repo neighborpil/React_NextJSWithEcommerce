@@ -223,4 +223,11 @@ export default Error
 
 ### Next Rounter
 - https://nextjs.org/docs/pages/api-reference/functions/use-router
+- router object
+    + isReady가 true일때 query값을 가지고 있다고 할 수 있다
+- router.push(url, as, options): 히스토리가 쌓이는 이동
+- router.replace(url, as, options): 히스토리가 쌓이지 않는 이동
+- router.prefetch: 미리 fetch해오기, yarn dev에서는 동작하지 않음, useEffect등에서 등록해놓으면 링크 클릭시 불러오지 않음
+- router.back: 뒤로가기
+- router.reload: 새로고침
 - 
