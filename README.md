@@ -230,4 +230,8 @@ export default Error
 - router.prefetch: 미리 fetch해오기, yarn dev에서는 동작하지 않음, useEffect등에서 등록해놓으면 링크 클릭시 불러오지 않음
 - router.back: 뒤로가기
 - router.reload: 새로고침
+
+## NextJS Configuration
+- next.config.js파일을 만들어 놓고 여기서 설정
+- document: https://nextjs.org/docs/app/api-reference/next-config-js
 - 
