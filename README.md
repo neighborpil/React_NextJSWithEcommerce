@@ -200,6 +200,9 @@ Error.getInitialProps = ({ res, err }) => {
 export default Error
 ```
 
+- Server side error와 같은 경우에는 404.js, 500.js와 같은 파일들을 통하여 에러 핸들링이 가능하다. Client side error와 같은 경우에는 Error Boundary설정을 통하여 가능하다
+- Error Boundary - class component, fallback처럼 UI에서 에러를 먼저 만들어서 보여줄 수 있다
+
 ### React 심화 - 18version streaming
 - 먼저 새 프로젝트 제작
 ```
