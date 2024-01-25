@@ -234,4 +234,29 @@ export default Error
 ## NextJS Configuration
 - next.config.js파일을 만들어 놓고 여기서 설정
 - document: https://nextjs.org/docs/app/api-reference/next-config-js
-- 
+- Webpack, Babel, Typescript로 파싱이 되지 않으니 최신 js문법을 쓰면 안된다
+- 어떤 설정이 없어도 nextjs는 잘 동작한다. 설정이 필수는 아니다
+- 환경변수 설정이 가능
+```
+module.exports = {
+  env: {
+    customKey: 'my-value',
+  },
+}
+```
+  + 페이지에서 이렇게 쓸 수 있다
+```
+function Page() {
+  return <h1>The value of customKey is: {process.env.customKey}</h1>
+}
+ 
+export default Page
+```
+- basePath: export path를 수정할때 사용
+```
+module.exports = {
+  basePath: '/docs',
+}
+```
+- rewrites: source와 destination을 설정하여 path는 destination의 것을 보여주는데, 실제 내용은 source의 것을 보여준다
+- redirect: source와 destination을 설정하여 path는 destination으로 이동
