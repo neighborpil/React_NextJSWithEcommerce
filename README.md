@@ -317,10 +317,27 @@ public
 ```
 git remote add origin https://github.com/neighborpil/react_commerce.git
 ```
-- lint-staged와 hursky를 통하여 깃 커밋 전에 eslint를 무조건 돌리도록 만들어준다
-   + 이렇게 함으로써 협업시 소스 스타일을 일정하게 유지 할 수 있다
+### 스타일링 강제 통일
+- lint-staged와 husky를 통하여 깃 커밋 전에 eslint를 무조건 돌리도록 만들어준다. 이렇게 함으로써 협업시 소스 스타일을 일정하게 유지 할 수 있다
+- lint-staged:  git staged 상태의 파일들만 타겟으로 뭔가 할 수 있게 해줌
+- husky: git hook 동작에 대한 정의를 .git 파일이 아닌 .husky에서 관리하여 repository에서 공유가 가능하도록 함
+- 패키지 설치
+```
+% yarn add -D lint-staged husky
+% yarn husky init
+```
+- package.json 파일에 lint-staged 설정 추가
+```
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ]
+  }
+```
+- 터미널에서 husky 설정하기
+```
+% echo "yarn lint-staged --no-stash" > .husky/pre-commit
+```
 
-#### lint-staged
-- git staged 상태의 파일들만 타겟으로 뭔가 할 수 있게 해줌
-#### hursky
-- git hook 동작에 대한 정의를 .git 파일이 아닌 .hursky에서 관리하여 repository에서 공유가 가능하도록 함
