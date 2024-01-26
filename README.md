@@ -267,11 +267,11 @@ module.exports = {
 
 ## E-Commerce project
 - 프로젝트 생성
-    + ESLint : yes
-    + Tailwind CSS: yes
-    + 'src' directory: no
-    + App Router: no
-    + customize the default import alias(@/*): no
+   + ESLint : yes
+   + Tailwind CSS: yes
+   + 'src' directory: no
+   + App Router: no
+   + customize the default import alias(@/*): no
 ```
 % yarn create next-app react_commerce --typescript
 ```
