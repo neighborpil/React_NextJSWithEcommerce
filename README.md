@@ -286,3 +286,29 @@ module.exports = {
     }
   },
 ```
+- prettier 설치
+```
+% yarn add -D prettier
+```
+- prettier 설정1: .prettierignore 파일
+```
+node_modules
+.next
+public
+```
+- prettier 설정2: .prettierrc 파일
+```
+{
+  "semi": false,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "useTabs": false
+}
+```
+- prettier 설정3: WebStorm에서 옵션 켜기
+   + preference에 들어간다
+   + Languate & Framework - Javascript - Prettier로 들어간다
+   + Automatic Prettier configuration 선택
+   + Run on save 체크 후 저장
+ 
+
