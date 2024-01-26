@@ -247,7 +247,7 @@ module.exports = {
   },
 }
 ```
-    + 페이지에서 이렇게 쓸 수 있다
+- 페이지에서 이렇게 쓸 수 있다
 ```
 function Page() {
   return <h1>The value of customKey is: {process.env.customKey}</h1>
@@ -274,4 +274,15 @@ module.exports = {
     + customize the default import alias(@/*): no
 ```
 % yarn create next-app react_commerce --typescript
+```
+- tsconfig.json 수정: compilerOptions에 추가
+   + baseUrl
+   + paths
+```
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["components/*"]
+    }
+  },
 ```
