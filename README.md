@@ -311,4 +311,16 @@ public
    + Automatic Prettier configuration 선택
    + Run on save 체크 후 저장
  
+- 깃 연동
+   + 깃헙 홈페이지에 가서 프로젝트를 만든다
+   + 로컬 프로젝트의 터미널로 가서 remote 주소를 복사해서 붙여준다
+```
+git remote add origin https://github.com/neighborpil/react_commerce.git
+```
+- lint-staged와 hursky를 통하여 깃 커밋 전에 eslint를 무조건 돌리도록 만들어준다
+   + 이렇게 함으로써 협업시 소스 스타일을 일정하게 유지 할 수 있다
 
+#### lint-staged
+- git staged 상태의 파일들만 타겟으로 뭔가 할 수 있게 해줌
+#### hursky
+- git hook 동작에 대한 정의를 .git 파일이 아닌 .hursky에서 관리하여 repository에서 공유가 가능하도록 함
