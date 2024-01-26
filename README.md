@@ -247,7 +247,7 @@ module.exports = {
   },
 }
 ```
-   + 페이지에서 이렇게 쓸 수 있다
+    + 페이지에서 이렇게 쓸 수 있다
 ```
 function Page() {
   return <h1>The value of customKey is: {process.env.customKey}</h1>
@@ -267,11 +267,11 @@ module.exports = {
 
 ## E-Commerce project
 - 프로젝트 생성
-```
-% yarn create next-app react_commerce --typescript
-```
     + ESLint : yes
     + Tailwind CSS: yes
     + 'src' directory: no
     + App Router: no
     + customize the default import alias(@/*): no
+```
+% yarn create next-app react_commerce --typescript
+```
