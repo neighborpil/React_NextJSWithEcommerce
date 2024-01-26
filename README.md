@@ -263,3 +263,15 @@ module.exports = {
 ```
 - rewrites: source와 destination을 설정하여 path는 destination의 것을 보여주는데, 실제 내용은 source의 것을 보여준다
 - redirect: source와 destination을 설정하여 path는 destination으로 이동
+
+
+## E-Commerce project
+- 프로젝트 생성
+```
+% yarn create next-app react_commerce --typescript
+```
+  + ESLint : yes
+  + Tailwind CSS: yes
+  + 'src' directory: no
+  + App Router: no
+  + customize the default import alias(@/*): no
