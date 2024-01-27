@@ -340,4 +340,4 @@ git remote add origin https://github.com/neighborpil/react_commerce.git
 ```
 % echo "yarn lint-staged --no-stash" > .husky/pre-commit
 ```
-
+- husky document: https://typicode.github.io/husky/
