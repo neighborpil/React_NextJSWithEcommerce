@@ -341,3 +341,25 @@ git remote add origin https://github.com/neighborpil/react_commerce.git
 % echo "yarn lint-staged --no-stash" > .husky/pre-commit
 ```
 - husky document: https://typicode.github.io/husky/
+
+### Notion API
+- https://www.notion.so/a4f3338a063042528285ec06070c77e0?v=9b745ace9b7045ed96f6f4f70f3033d1
+- https://www.notion.so/my-integrations
+
+### planetscale
+- free mysql
+- https://app.planetscale.com/neighborpil/commerce_database
+- quick guide
+   + https://planetscale.com/docs/tutorials/planetscale-quick-start-guide
+
+### Prisma
+- nodejs ORM
+- install
+```
+% yarn add -D prisma
+% yarn add -D @prisma/client     
+```
+- .env 파일 생성
+
+
+
