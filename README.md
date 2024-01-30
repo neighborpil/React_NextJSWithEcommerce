@@ -368,5 +368,42 @@ git remote add origin https://github.com/neighborpil/react_commerce.git
 ```
 % yarn prisma init
 ```
+4. prisma 폴더 내의 schema.prisma 파일을 설정
+```
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["referentialIntegrity"]
+  referentialIntegrity = "prisma"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model categories {
+  id          Int       @id @default(autoincrement())
+  name        String
+}
+
+model products {
+  id          Int       @id @default(autoincrement())
+  name        String
+  image_url String?
+  category_id Int
+
+  @@index([category_id])
+}
+```
+
+5. 프리즈마 생성
+    + DB 갱신이 안될경우에는 이거 해주면 된다
+```
+% yarn prisma generate
+```
+
 
 
