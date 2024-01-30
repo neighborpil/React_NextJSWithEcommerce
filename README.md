@@ -355,12 +355,14 @@ git remote add origin https://github.com/neighborpil/react_commerce.git
 ### Prisma
 - nodejs ORM
 1. install
+
 ```
 % yarn add -D prisma
-% yarn add -D @prisma/client     
+% yarn add -D @prisma/client
 ```
+
 2.env 파일 생성
-   + planetscale에서 가져온 database_url을 복사해준다
+    + planetscale에서 가져온 database_url을 복사해준다
 
 3. 초기화
 ```
