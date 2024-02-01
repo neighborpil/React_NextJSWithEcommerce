@@ -411,8 +411,26 @@ model products {
 % yarn add -D tailwindcss postcss autoprefixer
 % yarn tailwindcss init -p
 ```
+- tailwindcss.config.js파일 안에 설정 추가
+```
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
 
+```
 
-### emotion
-
+### emotion css
+- 자바스크립트 안에서 css를 바로 쓸 수 있게 해놓은 것
+- 설치
+```
+% yarn add @emotion/react @emotion/styled
+```
 
