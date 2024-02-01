@@ -405,5 +405,14 @@ model products {
 % yarn prisma generate
 ```
 
+### tailwind css 
+- install
+```
+% yarn add -D tailwindcss postcss autoprefixer
+% yarn tailwindcss init -p
+```
+
+
+### emotion
 
 
