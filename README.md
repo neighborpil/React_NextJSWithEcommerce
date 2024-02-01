@@ -433,4 +433,48 @@ module.exports = {
 ```
 % yarn add @emotion/react @emotion/styled
 ```
+- next.config.mjs에서 설정(compiler 부분 추가)
+```
+const nextConfig = {
+  compiler: {
+    emotion: true,
+  }
+};
+```
+- tsconfig.json에서 types 추가. 이는 eslint 에러 방지 위해 사용
+```
+{
+  "compilerOptions": {
+    "types": ["@emotion/react/types/css-prop"]
+  },
+}
+```
 
+### React Image Gallery
+- 이미지 슬라이더
+- 설치
+```
+% yarn add react-image-gallery
+% yarn add -D @types/react-image-gallery
+
+```
+- docs: https://github.com/xiaolin/react-image-gallery
+
+### nuka carousel
+- 이미지 슬라이더
+- 설치
+```
+% yarn add nuka-carousel
+```
+- docs: https://github.com/FormidableLabs/nuka-carousel
+
+
+### bundlephobia
+- https://bundlephobia.com/
+- 사용하고자 하는 패키지의 사이즈를 말해준다
+- 
+
+
+### import cost
+- 사용하고자 하는 패키지의 사이즈를 표시해준다
+- webstorm plugin
