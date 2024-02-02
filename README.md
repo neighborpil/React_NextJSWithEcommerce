@@ -500,3 +500,12 @@ module.exports =
 <meta property="og:image"              content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
 ```
 
+### react-draft-wysiwyg
+ - text editor
+ - 페이스북에서 만든 텍스트 에디터 draft기반
+ - wyswyg: what you see is what you get
+```
+% yarn add draft-js react-draft-wysiwyg
+% yarn add -D @types/draft-js @types/react-draft-wysiwyg
+```
+
